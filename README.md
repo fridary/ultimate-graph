@@ -7,6 +7,7 @@ Ultimate graph is a program for creating mathematics graph and real-time visuali
 
 You can start timer for animating algorithms, explaining step-by-step how it works each period of time (3 seconds as default).
 
+
 Custom plugins
 ----------
 
@@ -36,6 +37,7 @@ private void timer_Tick(object sender, EventArgs e) {
     UpdatePlugin(this, e);
 }
 ```
+
 
 Class diagram
 ----------
