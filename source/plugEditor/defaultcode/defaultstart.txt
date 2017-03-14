@@ -1,0 +1,93 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Windows.Forms;
+using System.Text;
+using control;
+using pluginfo;
+
+namespace assembly_name
+{
+	public class assembly_name : UserControl, IPlugin
+	{
+        string control_stripStatusText = "Ready";
+        bool control_CancelNewEdge = false;
+        bool control_CancelNewDot = false;
+        int control_radius;
+        Cursor control_cursor = Cursors.Default;
+
+        public event PluginEventHandler plugChange
+        {
+            add { UpdatePlugin += value; }
+            remove { UpdatePlugin -= value; }
+        }
+
+        public List<CPoint> pDot
+        {
+            set { dot_name = value; }
+        }
+
+        public List<CLine> pLine
+        {
+            set { line_name = value; }
+        }
+
+        public string pName
+        {
+            get { return control_name; }
+        }
+
+        public string pDescription
+        {
+            get { return control_descr; }
+        }
+
+        public string stripStatusText
+        {
+            get { return control_stripStatusText; }
+        }
+
+        public decimal pTimerInterval
+        {
+            set { control_timerInterval = value; }
+        }
+        
+        public decimal pTimerIntervalDefault
+        {
+            get { return control_timerInterval; }
+        }
+
+        public UserControl MainInterface
+        {
+            get { return this; }
+        }
+
+        public bool CancelNewEdge
+        {
+            get { return control_CancelNewEdge; }
+        }
+
+        public bool CancelNewDot
+        {
+            get { return control_CancelNewDot; }
+        }
+
+        public int Radius
+        {
+            set { control_radius = value; }
+        }
+
+        public Cursor pCursor
+        {
+            get { return control_cursor; }
+        }
+        
+        public int control_EdgeSize(int x1, int y1, int x2, int y2)
+        {
+            int a = Math.Abs(x1 - x1);
+            int b = Math.Abs(y1 - y2);
+            int c = Convert.ToInt32(Math.Sqrt(a * a + b * b) / 10);
+            return c;
+        }

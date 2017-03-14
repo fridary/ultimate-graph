@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ultimateGraph.AppForm">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <Members>
+      <Field Name="aboutToolStripMenuItem" Hidden="true" />
+      <Field Name="algorithmToolStripMenuItem" Hidden="true" />
+      <Field Name="assembly" Hidden="true" />
+      <Field Name="chooseToolStripMenuItem" Hidden="true" />
+      <Field Name="clearToolStripMenuItem" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="contextMenuStrip1" Hidden="true" />
+      <Field Name="cutToolStripButton" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="ediToolStripMenuItem" Hidden="true" />
+      <Field Name="exit" Hidden="true" />
+      <Field Name="exitToolStripMenuItem" Hidden="true" />
+      <Field Name="fileToolStripMenuItem" Hidden="true" />
+      <Field Name="groupBox1" Hidden="true" />
+      <Field Name="groupBox2" Hidden="true" />
+      <Field Name="helpToolStripButton" Hidden="true" />
+      <Field Name="helpToolStripMenuItem" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lineToolStripMenuItem" Hidden="true" />
+      <Field Name="lineToolStripMenuItem1" Hidden="true" />
+      <Field Name="lineToolStripMenuItem3" Hidden="true" />
+      <Field Name="menuStrip1" Hidden="true" />
+      <Field Name="newfile" Hidden="true" />
+      <Field Name="newToolStripButton" Hidden="true" />
+      <Field Name="newToolStripMenuItem" Hidden="true" />
+      <Field Name="open" Hidden="true" />
+      <Field Name="openToolStripButton" Hidden="true" />
+      <Field Name="openToolStripMenuItem" Hidden="true" />
+      <Field Name="optionsToolStripMenuItem" Hidden="true" />
+      <Field Name="panelPlugin" Hidden="true" />
+      <Field Name="pDesc" Hidden="true" />
+      <Field Name="plugEditorToolStripMenuItem" Hidden="true" />
+      <Field Name="pName" Hidden="true" />
+      <Field Name="saveAsToolStripMenuItem" Hidden="true" />
+      <Field Name="saved" Hidden="true" />
+      <Field Name="saveToolStripButton" Hidden="true" />
+      <Field Name="saveToolStripMenuItem" Hidden="true" />
+      <Field Name="statusStrip1" Hidden="true" />
+      <Field Name="toolbarToolStripMenuItem" Hidden="true" />
+      <Field Name="toolbarToolStripMenuItem1" Hidden="true" />
+      <Field Name="toolsToolStripMenuItem" Hidden="true" />
+      <Field Name="toolStrip1" Hidden="true" />
+      <Field Name="toolStripContainer1" Hidden="true" />
+      <Field Name="toolStripSeparator" Hidden="true" />
+      <Field Name="toolStripSeparator1" Hidden="true" />
+      <Field Name="toolStripStatusLabel1" Hidden="true" />
+      <Field Name="toolStripStatusLabel2" Hidden="true" />
+      <Field Name="toolStripStatusLabel3" Hidden="true" />
+      <Field Name="viewToolStripMenuItem" Hidden="true" />
+      <Field Name="Graph1" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>lcHCAkEkAGAAAAUAAfSLgBUimQqCAAg5KyggQKkAAGU=</HashCode>
+      <FileName>AppForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="control.Graph">
+    <Position X="4" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="CancelNewDot" Hidden="true" />
+      <Field Name="CancelNewEdge" Hidden="true" />
+      <Field Name="checkbox1" Hidden="true" />
+      <Field Name="checkbox2" Hidden="true" />
+      <Field Name="checkbox3" Hidden="true" />
+      <Field Name="checkbox4" Hidden="true" />
+      <Field Name="checkbox5" Hidden="true" />
+      <Field Name="count" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="Graph" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="plugEditor.CompileCode">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="plugEditor.CompileCode.Languages" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="plugEditor.codeBox">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="plugEditor.EditorForm">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="control.CPoint">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <Members>
+      <Field Name="cord_color" Hidden="true" />
+      <Field Name="cross_color" Hidden="true" />
+      <Field Name="sup_color" Hidden="true" />
+      <Field Name="sx" Hidden="true" />
+      <Field Name="sy" Hidden="true" />
+      <Field Name="vertex_color" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="control.CLine">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="pluginfo.IPlugin">
+    <Position X="7.25" Y="0.5" Width="1.75" />
+    <Members>
+      <Property Name="CancelNewDot" Hidden="true" />
+      <Property Name="CancelNewEdge" Hidden="true" />
+      <Property Name="MainInterface" Hidden="true" />
+      <Property Name="pCursor" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

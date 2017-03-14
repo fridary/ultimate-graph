@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34956428-0611-446F-B53A-09279F4B77F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>plugEditor</RootNamespace>
+    <AssemblyName>plugeditor</AssemblyName>
+    <ApplicationIcon>Resources\plugeditor.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="codeBox\codeBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="codeBox\codeBox.Designer.cs">
+      <DependentUpon>codeBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compiler.cs" />
+    <Compile Include="EditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorForm.Designer.cs">
+      <DependentUpon>EditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindReplace\FindDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FindReplace\FindDialog.Designer.cs">
+      <DependentUpon>FindDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindReplace\FindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindReplace\FindForm.Designer.cs">
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info\General.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Info\General.Designer.cs">
+      <DependentUpon>General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info\Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindReplace\ISearchable.cs" />
+    <Compile Include="NewPlug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewPlug.Designer.cs">
+      <DependentUpon>NewPlug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plugins.Designer.cs">
+      <DependentUpon>Plugins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EditorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindReplace\FindForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info\General.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info\Info.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPlug.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewPlug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindReplace\ResultForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FindReplace\SearchableTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FindReplace\SearchableTextBox.Designer.cs">
+      <DependentUpon>SearchableTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindReplace\ResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindReplace\ResultForm.Designer.cs">
+      <DependentUpon>ResultForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\conf\conf.csproj">
+      <Project>{D6EB2067-8B99-4AEA-9EF1-F52B42B9134F}</Project>
+      <Name>conf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\control\control.csproj">
+      <Project>{81C67A70-E847-45E7-93B8-32306EDB31FB}</Project>
+      <Name>control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\pluginfo\pluginfo.csproj">
+      <Project>{C037E8DB-9A8F-4F1C-9452-3E92C5514724}</Project>
+      <Name>pluginfo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="codeBox\codeBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>codeBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defaultcode\defaultcode.txt" />
+    <EmbeddedResource Include="defaultcode\defaultstart.txt" />
+    <EmbeddedResource Include="Plugins.resx">
+      <DependentUpon>Plugins.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Resources\cb\c_wordwrap.png" />
+    <None Include="Resources\cb\c_copy.png" />
+    <None Include="Resources\cb\c_cut.png" />
+    <None Include="Resources\cb\c_delete.png" />
+    <None Include="Resources\strip\s_find.png" />
+    <None Include="Resources\strip\s_findnext.png" />
+    <None Include="Resources\cb\c_paste.png" />
+    <None Include="Resources\cb\c_plain.png" />
+    <None Include="Resources\cb\c_redo.png" />
+    <None Include="Resources\cb\c_undo.png" />
+    <Content Include="Resources\plugeditor.ico" />
+    <None Include="Resources\strip\s_options.png" />
+    <None Include="Resources\strip\s_open.png" />
+    <None Include="Resources\strip\s_new.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

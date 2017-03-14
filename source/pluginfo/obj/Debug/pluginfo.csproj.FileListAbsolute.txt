@@ -1,0 +1,7 @@
+X:\oop_prak_zadanie\source\pluginfo\bin\Debug\pluginfo.dll
+X:\oop_prak_zadanie\source\pluginfo\bin\Debug\pluginfo.pdb
+X:\oop_prak_zadanie\source\pluginfo\bin\Debug\control.dll
+X:\oop_prak_zadanie\source\pluginfo\bin\Debug\control.pdb
+X:\oop_prak_zadanie\source\pluginfo\obj\Debug\ResolveAssemblyReference.cache
+X:\oop_prak_zadanie\source\pluginfo\obj\Debug\pluginfo.dll
+X:\oop_prak_zadanie\source\pluginfo\obj\Debug\pluginfo.pdb

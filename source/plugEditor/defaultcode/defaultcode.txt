@@ -1,0 +1,102 @@
+﻿string control_name = "plug_name"; // имя плагина
+string control_descr = "plug_descr"; // описание
+
+event PluginEventHandler UpdatePlugin; // событие для обнавления визуализации графов (отрисовки)
+
+List<CPoint> dot = new List<CPoint>(); // список всех вершин
+List<CLine> line = new List<CLine>(); // список всех ребер
+
+decimal control_timerInterval = 1000; // таймер по умолчанию
+
+public assembly_name()
+{
+    // функция для визуализации левого окошка на экран
+    InitializeComponent();
+}
+
+public void control_Initialize()
+{
+    // эта функция вызывается когда произошли какие-либо изменения с таймером или графами
+    this.timer1.Interval = Convert.ToInt32(control_timerInterval);
+}
+
+private void timer1_Tick(object sender, EventArgs e)
+{
+    control_stripStatusText = "Готово";
+    this.label1.Text = "Готово";
+    timer1.Stop(); // останавливаем таймер
+
+    UpdatePlugin(this, e); // обнавляем плагин
+}
+
+private void buttonStart_Click(object sender, EventArgs e)
+{
+    control_stripStatusText = "Визуализирую Алгоритм..."; // текст в нижнем левом статус-баре
+    timer1.Start(); // запуск таймера
+}
+
+private void buttonStop_Click(object sender, EventArgs e)
+{
+    control_stripStatusText = "Остановлено";
+    timer1.Stop();
+    UpdatePlugin(this, e);
+}
+
+private IContainer components;
+private Button button1;
+private Button button2;
+private Label label1;
+private Timer timer1;
+
+private void InitializeComponent()
+{
+    this.components = new System.ComponentModel.Container();
+    this.button1 = new System.Windows.Forms.Button();
+    this.button2 = new System.Windows.Forms.Button();
+    this.label1 = new System.Windows.Forms.Label();
+    this.timer1 = new System.Windows.Forms.Timer(this.components);
+    this.SuspendLayout();
+    // 
+    // buttonStart
+    // 
+    this.button1.Enabled = true;
+    this.button1.Location = new System.Drawing.Point(38, 58);
+    this.button1.Name = "buttonStart";
+    this.button1.Size = new System.Drawing.Size(75, 23);
+    this.button1.TabIndex = 0;
+    this.button1.Text = "Start";
+    this.button1.UseVisualStyleBackColor = true;
+    this.button1.Click += new System.EventHandler(this.buttonStart_Click);
+    // 
+    // buttonStop
+    // 
+    this.button2.Enabled = true;
+    this.button2.Location = new System.Drawing.Point(38, 87);
+    this.button2.Name = "buttonStop";
+    this.button2.Size = new System.Drawing.Size(75, 23);
+    this.button2.TabIndex = 2;
+    this.button2.Text = "Stop";
+    this.button2.UseVisualStyleBackColor = true;
+    this.button2.Click += new System.EventHandler(this.buttonStop_Click);
+    // 
+    // label1
+    // 
+    this.label1.Location = new System.Drawing.Point(3, 125);
+    this.label1.Name = "label1";
+    this.label1.Size = new System.Drawing.Size(144, 82);
+    this.label1.TabIndex = 1;
+    this.label1.Text = "vertex: none";
+    // 
+    // timer1
+    // 
+    this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+    // 
+    // assembly_name
+    // 
+    this.Controls.Add(this.button1);
+    this.Controls.Add(this.button2);
+    this.Controls.Add(this.label1);
+    this.Name = "assembly_name";
+    this.Size = new System.Drawing.Size(150, 207);
+    this.ResumeLayout(false);
+}

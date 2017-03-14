@@ -1,0 +1,12 @@
+X:\oop_prak_zadanie\source\algorithms\breadthSearch\bin\Debug\breadthSearch.dll
+X:\oop_prak_zadanie\source\algorithms\breadthSearch\bin\Debug\breadthSearch.pdb
+X:\oop_prak_zadanie\source\algorithms\breadthSearch\bin\Debug\control.dll
+X:\oop_prak_zadanie\source\algorithms\breadthSearch\bin\Debug\pluginfo.dll
+X:\oop_prak_zadanie\source\algorithms\breadthSearch\bin\Debug\control.pdb
+X:\oop_prak_zadanie\source\algorithms\breadthSearch\bin\Debug\pluginfo.pdb
+X:\oop_prak_zadanie\source\algorithms\breadthSearch\obj\Debug\ResolveAssemblyReference.cache
+X:\oop_prak_zadanie\source\algorithms\breadthSearch\obj\Debug\breadthSearch.breadthSearch.resources
+X:\oop_prak_zadanie\source\algorithms\breadthSearch\obj\Debug\GenerateResource-ResGen.read.1.tlog
+X:\oop_prak_zadanie\source\algorithms\breadthSearch\obj\Debug\GenerateResource-ResGen.write.1.tlog
+X:\oop_prak_zadanie\source\algorithms\breadthSearch\obj\Debug\breadthSearch.dll
+X:\oop_prak_zadanie\source\algorithms\breadthSearch\obj\Debug\breadthSearch.pdb

@@ -1,0 +1,12 @@
+X:\oop_prak_zadanie\source\algorithms\depthSearch\bin\Debug\depthSearch.dll
+X:\oop_prak_zadanie\source\algorithms\depthSearch\bin\Debug\depthSearch.pdb
+X:\oop_prak_zadanie\source\algorithms\depthSearch\bin\Debug\control.dll
+X:\oop_prak_zadanie\source\algorithms\depthSearch\bin\Debug\pluginfo.dll
+X:\oop_prak_zadanie\source\algorithms\depthSearch\bin\Debug\control.pdb
+X:\oop_prak_zadanie\source\algorithms\depthSearch\bin\Debug\pluginfo.pdb
+X:\oop_prak_zadanie\source\algorithms\depthSearch\obj\Debug\ResolveAssemblyReference.cache
+X:\oop_prak_zadanie\source\algorithms\depthSearch\obj\Debug\depthSearch.depthSearch.resources
+X:\oop_prak_zadanie\source\algorithms\depthSearch\obj\Debug\GenerateResource-ResGen.read.1.tlog
+X:\oop_prak_zadanie\source\algorithms\depthSearch\obj\Debug\GenerateResource-ResGen.write.1.tlog
+X:\oop_prak_zadanie\source\algorithms\depthSearch\obj\Debug\depthSearch.dll
+X:\oop_prak_zadanie\source\algorithms\depthSearch\obj\Debug\depthSearch.pdb
