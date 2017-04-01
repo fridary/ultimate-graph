@@ -20,16 +20,13 @@ Let's try code plugin that paints all vertices in random color one by one:
 ```c#
 int i = 0;
 private void timer_Tick(object sender, EventArgs e) {
-    if (i != dot.Count)
-    {
+    if (i != dot.Count) {
         Random rd = new Random();
         dot[i].highlight = true;
         dot[i].highlight_color = Color.FromArgb(rd.Next(255), rd.Next(255), rd.Next(255));
         this.label1.Text = "Drawing " + (i + 1) + " vertice";
         i++;
-    }
-    else
-    {
+    } else {
         control_stripStatusText = "Done";
         this.label.Text = "Done";
         timer.Stop(); // stop timer when painted last vertice
